@@ -14,7 +14,7 @@ import (
 )
 
 //SteemConnect handles making a connection to a local instance of steemd.  In the next revision it'll take a string variable for the steemd address.
-func Steemconnect() (client *rpc.Client) {
+func steemconnect() (client *rpc.Client) {
 	// Process flags.
 	flagAddress := flag.String("rpc_endpoint", "ws://127.0.0.1:8090", "steemd RPC endpoint address")
 	flagReconnect := flag.Bool("reconnect", true, "enable auto-reconnect mode")
